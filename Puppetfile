@@ -65,3 +65,9 @@ github "xquartz",     "1.2.1"
 # github "postgresql",  "4.0.1"
 # github "redis",       "3.1.0"
 # github "sysctl",      "1.0.1"
+
+github "postgresql",     "9.4.5"
+github "zsh",            "1.0.0"
+github "ohmyzsh",        "1.0.0", :repo => "erivello/puppet-ohmyzsh"
+github "sublime_text_3", "1.0.3", :repo => "jozefizso/puppet-sublime_text_3"
+
