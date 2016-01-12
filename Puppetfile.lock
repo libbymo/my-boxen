@@ -84,6 +84,21 @@ GITHUBTARBALL
     xquartz (1.2.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-zsh
+  specs:
+    zsh (1.0.0)
+
+GITHUBTARBALL
+  remote: erivello/puppet-ohmyzsh
+  specs:
+    ohmyzsh (1.0.0)
+
+GITHUBTARBALL
+  remote: jozefizso/puppet-sublime_text_3
+  specs:
+    sublime_text_3 (1.0.3)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
   specs:
     inifile (1.4.1)
@@ -112,11 +127,14 @@ DEPENDENCIES
   module_data (= 0.0.4)
   nginx (= 1.6.0)
   nodejs (= 5.0.0)
+  ohmyzsh (= 1.0.0)
   openssl (= 1.0.0)
   pkgconfig (= 1.0.0)
   repository (= 2.4.1)
   ruby (= 8.5.3)
   stdlib (= 4.7.0)
+  sublime_text_3 (= 1.0.3)
   sudo (= 1.0.0)
   xquartz (= 1.2.1)
+  zsh (= 1.0.0)
 
