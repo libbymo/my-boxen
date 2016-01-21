@@ -1,12 +1,16 @@
 class people::libbymo::apps {
   package { 'iterm2'  : provider => 'brewcask'}
+
+  # Because I install java this way, jruby is not
+  # installable via a module as there's a dep on the java puppet module
+  # currently the puppet module doesn't support java 8.
   package { 'java'    : provider => 'brewcask'}
 
   homebrew::tap { 'caskroom/versions': }
 
   # Error installing Sublime Text 3 via brew cask, even manually around permissions.
   # and or actually getting the app into the cask cellar location.
-  # Installed this manually. 
+  # Installed this manually.
   package { 'sublime-text3'         : provider => 'brewcask' }
   package { 'firefox-nightly'       : provider => 'brewcask' }
   package { 'hipchat'      	 		: provider => 'brewcask' }

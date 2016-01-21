@@ -66,8 +66,9 @@ github "xquartz",     "1.2.1"
 # github "redis",       "3.1.0"
 # github "sysctl",      "1.0.1"
 
+github "osx",            "2.8.0"
 github "zsh",            "1.0.0"
 github "ohmyzsh",        "1.0.0", :repo => "erivello/puppet-ohmyzsh"
-github "vagrant",        "3.3.4"
+github "vagrant",        "3.3.0"
 github "sublime_text_3", "1.0.3", :repo => "jozefizso/puppet-sublime_text_3"
 

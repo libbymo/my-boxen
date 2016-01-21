@@ -10,6 +10,11 @@ class people::libbymo::shell {
     require => Class['ohmyzsh']
   }
 
+  repository { "${home}/.oh-my-zsh/custom/themes/sugar-free":
+    source => "libbymo/sugar-free",
+    require => Class['ohmyzsh']
+  }
+
   file { "${home}/.zshrc":
     ensure  => link,
     target  => "${dotfiles_dir}/.zshrc",

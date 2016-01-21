@@ -59,6 +59,11 @@ GITHUBTARBALL
     openssl (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-osx
+  specs:
+    osx (2.8.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-pkgconfig
   specs:
     pkgconfig (1.0.0)
@@ -81,7 +86,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
-    vagrant (3.3.4)
+    vagrant (3.3.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-xquartz
@@ -134,13 +139,14 @@ DEPENDENCIES
   nodejs (= 5.0.0)
   ohmyzsh (= 1.0.0)
   openssl (= 1.0.0)
+  osx (= 2.8.0)
   pkgconfig (= 1.0.0)
   repository (= 2.4.1)
   ruby (= 8.5.3)
   stdlib (= 4.7.0)
   sublime_text_3 (= 1.0.3)
   sudo (= 1.0.0)
-  vagrant (= 3.3.4)
+  vagrant (= 3.3.0)
   xquartz (= 1.2.1)
   zsh (= 1.0.0)
 
