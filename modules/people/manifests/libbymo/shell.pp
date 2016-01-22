@@ -31,4 +31,12 @@ class people::libbymo::shell {
       Repository[$dotfiles_dir]
     ]
   }
+
+  file { "${home}/.gitignore":
+    ensure  => link,
+    target  => "${dotfiles_dir}/.gitignore",
+    require => [
+      Repository[$dotfiles_dir]
+    ]
+  }
 }
