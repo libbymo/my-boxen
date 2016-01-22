@@ -23,4 +23,12 @@ class people::libbymo::shell {
       Class['zsh']
     ]
   }
+
+  file { "${home}/.gitconfig":
+    ensure  => link,
+    target  => "${dotfiles_dir}/.gitconfig",
+    require => [
+      Repository[$dotfiles_dir]
+    ]
+  }
 }
