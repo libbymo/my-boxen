@@ -1,5 +1,6 @@
 class people::libbymo::apps {
-  package { 'iterm2'  : provider => 'brewcask'}
+
+  package { 'iterm2'                : provider => 'brewcask'}
 
   # Because I install java this way, jruby is not
   # installable via a module as there's a dep on the java puppet module
@@ -13,13 +14,14 @@ class people::libbymo::apps {
   # Installed this manually.
   package { 'sublime-text3'         : provider => 'brewcask' }
   package { 'firefox-nightly'       : provider => 'brewcask' }
-  package { 'hipchat'      	 		: provider => 'brewcask' }
-  package { 'charles'      	 		: provider => 'brewcask' }
-  package { 'tunnelblick'			: provider => 'brewcask' }
-  package { 'caffeine'				: provider => 'brewcask' }
-  package { 'spotify'				: provider => 'brewcask' }
-  package { 'moom'					: provider => 'brewcask' }
-  package { 'intellij-idea'			: provider => 'brewcask' }
+  package { 'hipchat'      	 	      : provider => 'brewcask' }
+  package { 'charles'      	 	      : provider => 'brewcask' }
+  package { 'tunnelblick'           : provider => 'brewcask' }
+  package { 'spotify'               : provider => 'brewcask' }
+  package { 'intellij-idea'         : provider => 'brewcask' }
+  # package { 'alfred'                : provider => 'brewcask' }
+  package { 'spectacle'             : provider => 'brewcask' }
+
   # installs latest, version 8 currently licensed.
   package { 'vmware-fusion'      	: provider => 'brewcask' }
 
