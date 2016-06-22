@@ -31,6 +31,12 @@ class people::libbymo::node {
     node_version => '*'
   }
 
+  npm_module { "grunt for installed node versions":
+    module       => 'grunt-cli',
+    ensure       => 'present',
+    node_version => '*'
+  }
+
   # installation of ember-cli for node version 5.x.x seems to fail,
   # so only install for default node version 4.2.4
   npm_module { "ember-cli for ${nodejs::global::version}":
