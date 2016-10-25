@@ -1,4 +1,5 @@
 class people::libbymo::apps {
+  $dotfiles_dir = hiera('dotfiles_dir')
 
   package { 'iterm2'                : provider => 'brewcask'}
 
@@ -28,7 +29,6 @@ class people::libbymo::apps {
 
   # sublime text
   ## We're installing via brew cask, but using sublime_text_3::package to install packages
-  $dotfiles_dir = hiera('dotfiles_dir')
 
   # taken from https://github.com/jozefizso/puppet-sublime_text_3/blob/master/manifests/config.pp
   $dir = "/Users/${::boxen_user}/Library/Application Support/Sublime Text 3"

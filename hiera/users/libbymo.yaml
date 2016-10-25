@@ -1,4 +1,4 @@
-"nodejs::build::ensure": "5686bdb103751cd9bb935cee630611589f859c25"
+"nodejs::build::ensure": "b723ef7c9e152b4d0c56db7fb03347ee76317d37"
 
 
 "dotfiles_dir": "/Users/%{::boxen_user}/dotfiles"
