@@ -20,7 +20,7 @@ class people::libbymo::apps {
   package { 'tunnelblick'           : provider => 'brewcask' }
   package { 'spotify'               : provider => 'brewcask' }
   package { 'intellij-idea'         : provider => 'brewcask' }
-  # package { 'alfred'                : provider => 'brewcask' }
+  package { 'alfred'                : provider => 'brewcask' }
   package { 'spectacle'             : provider => 'brewcask' }
 
   # installs latest, version 8 currently licensed.
